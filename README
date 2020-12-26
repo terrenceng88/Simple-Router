@@ -1,0 +1,17 @@
+
+
+----- Final Project Contents -----
+
+- topo.py
+  - topology code that specifies IP addresses, hosts, switches, and ports
+
+- controller.py
+  - pox controller that allows all hosts to communicate with each other with certain limitations
+    - untrusted host cannot send ICMP traffic to floor hosts or server
+    - untrusted host cannot send any IP traffic to the server
+    - trusted host cannot send ICMP traffic to 2nd floor hosts or server
+    - trusted host cannot send IP traffic to server
+    - hosts in 1st floor cannot send traffic to 2nd floor
+
+- README
+	- describes the contents of each file 
